@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6E3; /* Soft cream background */
+    color: #782A36; /* Deep burgundy for text */
+}
+
+header {
+    background: linear-gradient(90deg, #D8DBBD, #B59F78); /* Sage green to warm beige gradient */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.8em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 5px solid #FAF6E3; /* Matches the cream background */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #782A36; /* Deep burgundy for text */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    background-color: #D8DBBD; /* Pale sage green for button background */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #B59F78; /* Warm beige on hover */
+    transform: scale(1.1);
+}
+
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+main h2 {
+    color: #782A36; /* Deep burgundy for headings */
+    border-bottom: 3px solid #D8DBBD; /* Pale sage green underline */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 12px 0;
+    padding: 15px;
+    background: #D8DBBD; /* Pale sage green background */
+    border-left: 6px solid #B59F78; /* Warm beige border */
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(12px);
+    background: #B59F78; /* Warm beige on hover */
+}
+
+footer {
+    background: linear-gradient(90deg, #782A36, #B59F78); /* Deep burgundy to warm beige */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        right: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+}
+
